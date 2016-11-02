@@ -33,7 +33,7 @@ count = 10
 //:
 //: Now it's your turn. Change `greeting` to be a different string by using the assignment operator.
 
-
+var myOwnVar = "Good Bye!"
 
 //: *Note:* unlike math, where `x = 10` and `10 = x` are interchangeable, in programming the variable goes on the left of the `=` symbol, and the new value goes on the right.
 
@@ -42,6 +42,7 @@ count = 10
 //:
 //: We want to add 1 to whatever the value of `count` is now. We could manually look at the value in `count`, see that it is 10 and put 11 into `count` using the assignment operator. This works, but we can do it in a better way. We can set count to be whatever count is, plus 1. See if you can figure out the syntax for this.
 
+print ("My new count is" , count);
 
 //: *Note:* If you're ever unsure of the contents of a variable in a playground, write the variable on a line by itself and you will see its value printed to the right of it. Or you can use the `print` function like so: `print(variableName)`.
 
@@ -71,9 +72,12 @@ count
 var tipAmount = 6.01
 // tipAmount's type is:
 
+print ("tipAmount is", tipAmount, "which is a \n \t Double");
+
+// isOpen's type is:
 
 var isOpen = true
-// isOpen's type is:
+print ("isOpen's type is:", isOpen, "which is a string");
 
 
 //: ## Type Inference
@@ -98,10 +102,15 @@ var height: Double = 10
 //: It may not be obvious, but the types we are using, `String`, `Int`, and `Double` all have methods, or bits of code, you can ask them to run. `Float` and `Int` have a pretty minimal set of things they can do, but `String` has a lot!
 //:
 //: Write out the name of a variable, e.g. `greeting`, and then a period. This will show the autocomplete menu. From this list you can pick `uppercased` and `lowercased` to change the case of the characters in our greeting.
+
+greeting.uppercased();
+
+
 //:
 //: Print out the uppercase and lowercase versions of the string below:
 
 var schoolName = "Lightouse Labs"
+
 
 
 
